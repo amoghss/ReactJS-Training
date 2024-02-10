@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Startup</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section#contact {
+            padding: 50px 0;
+        }
+
+        section#contact h2 {
+            margin-top: 0;
+        }
+
+        section#about {
+            padding: 50px 0;
+        }
+
+        section#about h2 {
+            margin-top: 0;
+        }
+
+        section#home {
+            padding: 50px 0;
+        }
+
+        section#home h2 {
+            margin-top: 0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group textarea {
+            height: 100px;
+        }
+
+        button[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>My Startup</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Home</h2>
+            <img src="https://t4.ftcdn.net/jpg/02/38/40/55/360_F_238405533_yyX4K55OmH2LiM7LQ01ITn6kl0b6J6K8.jpg"
+                alt="My_Startup">
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Our Story</h2>
+            <p>Welcome to My Startup, a pioneering leader dedicated to delivering exceptional Products globally. Founded
+                2024, we embody innovation, excellence, and unwavering commitment. With cutting-edge solutions and a
+                team of passionate professionals, we redefine, setting new standards of excellence. Our journey began
+                with a vision to learn React, and today, we stand as a symbol of reliability and trust. Leveraging the
+                latest technologies and industry best practices, we empower our clients to thrive in an ever-evolving
+                landscape. At My Startup, integrity, transparency, and accountability are at the core of everything we
+                do. Join us in our pursuit of excellence and discover what sets us apart as the preferred choice for
+                businesses worldwide.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Fill out the form below to get in touch with us.</p>
+            <form action="submit.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Startup. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
